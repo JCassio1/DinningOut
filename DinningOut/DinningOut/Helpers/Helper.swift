@@ -1,9 +1,8 @@
 //
-//  Helper.swift
-//  A small collection of quick helpers to avoid repeating the same old code.
+//  ContentView.swift
+//  DinningOut
 //
-//  Created by Paul Hudson on 23/06/2019.
-//  Copyright © 2019 Hacking with Swift. All rights reserved.
+//  Created by MR.Robot 💀 on 06/03/2021.
 //
 
 import UIKit
