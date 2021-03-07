@@ -12,7 +12,12 @@ struct ItemRow: View {
     let item : MenuItem
     
     var body: some View {
-        Text(item.name)
+        HStack(spacing: 20) {
+            Image(item.thumbnailImage)
+                .clipShape(Circle())
+            Text(item.name)
+            Text("£ \(item.price)")
+        }
     }
 }
 
