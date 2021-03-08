@@ -10,16 +10,30 @@ import SwiftUI
 struct ItemRow: View {
     
     let item : MenuItem
+
     
     var body: some View {
         HStack(spacing: 20) {
             Image(item.thumbnailImage)
                 .clipShape(Circle())
+
             VStack(alignment: .leading, spacing: 4) {
                 Text(item.name)
+                    .font(.headline)
                 Text("£ \(item.price)")
             }
             
+            Spacer()
+            
+            ForEach(item.restrictions, id: \.self) { restriction in
+                Text(restriction)
+                    .font(.caption)
+                    .fontWeight(.black)
+                    .padding(9)
+                    .background(dietaryColors[restriction, default: .black])
+                    .clipShape(Circle())
+                    .foregroundColor(.white)
+            }
         }
     }
 }
