@@ -23,4 +23,10 @@ This is a mobile application that allows customers to view their restaurant menu
 3. Select iphone 12 Pro
 4. Run application by pressing CMD + R;
 
+## 🛣 Protocol
+
+1. Commits must obey [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). This provides an easy set of rules for creating an explicit commit history, which makes it easier to write automated tools on top of such as SemVer.
+
+
+
 Made with ❤️ by Joselson
