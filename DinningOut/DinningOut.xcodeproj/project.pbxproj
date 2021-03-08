@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21EB30B25F4FDDB0073CE2C /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */; };
 		F2D9CE8225F4335000FE74EE /* DinningOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */; };
 		F2D9CE8425F4335000FE74EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE8325F4335000FE74EE /* ContentView.swift */; };
 		F2D9CE8625F4335400FE74EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D9CE8525F4335400FE74EE /* Assets.xcassets */; };
 		F2D9CE8925F4335400FE74EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D9CE8825F4335400FE74EE /* Preview Assets.xcassets */; };
+		F2D9CE9725F438F600FE74EE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE9625F438F600FE74EE /* Helper.swift */; };
+		F2D9CE9A25F4398E00FE74EE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE9925F4398E00FE74EE /* Menu.swift */; };
+		F2D9CEA025F44F2200FE74EE /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE9F25F44F2200FE74EE /* Order.swift */; };
+		F2D9CEA325F44F5F00FE74EE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = F2D9CEA225F44F5E00FE74EE /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		F2D9CE7E25F4335000FE74EE /* DinningOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinningOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinningOutApp.swift; sourceTree = "<group>"; };
 		F2D9CE8325F4335000FE74EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2D9CE8525F4335400FE74EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2D9CE8825F4335400FE74EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2D9CE8A25F4335400FE74EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D9CE9625F438F600FE74EE /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F2D9CE9925F4398E00FE74EE /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F2D9CE9F25F44F2200FE74EE /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		F2D9CEA225F44F5E00FE74EE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F21EB30925F4FDBC0073CE2C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F2D9CE7525F4335000FE74EE = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +70,11 @@
 		F2D9CE8025F4335000FE74EE /* DinningOut */ = {
 			isa = PBXGroup;
 			children = (
-				F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */,
-				F2D9CE8325F4335000FE74EE /* ContentView.swift */,
-				F2D9CE8525F4335400FE74EE /* Assets.xcassets */,
-				F2D9CE8A25F4335400FE74EE /* Info.plist */,
+				F2D9CE9525F4386C00FE74EE /* Utils */,
+				F2D9CE9425F4386500FE74EE /* Views */,
+				F2D9CE9325F4384F00FE74EE /* Managers */,
+				F2D9CE9225F4382F00FE74EE /* Models */,
+				F2D9CE9125F4382300FE74EE /* Helpers */,
 				F2D9CE8725F4335400FE74EE /* Preview Content */,
 			);
 			path = DinningOut;
@@ -67,6 +86,58 @@
 				F2D9CE8825F4335400FE74EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2D9CE9125F4382300FE74EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9CEA225F44F5E00FE74EE /* menu.json */,
+				F2D9CE9625F438F600FE74EE /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2D9CE9225F4382F00FE74EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9CE9925F4398E00FE74EE /* Menu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2D9CE9325F4384F00FE74EE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F2D9CE9425F4386500FE74EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9CEA625F4532000FE74EE /* ContentView */,
+				F2D9CE9F25F44F2200FE74EE /* Order.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2D9CE9525F4386C00FE74EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */,
+				F2D9CE8525F4335400FE74EE /* Assets.xcassets */,
+				F2D9CE8A25F4335400FE74EE /* Info.plist */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F2D9CEA625F4532000FE74EE /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				F21EB30925F4FDBC0073CE2C /* Components */,
+				F2D9CE8325F4335000FE74EE /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D9CEA325F44F5F00FE74EE /* menu.json in Resources */,
 				F2D9CE8925F4335400FE74EE /* Preview Assets.xcassets in Resources */,
 				F2D9CE8625F4335400FE74EE /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D9CEA025F44F2200FE74EE /* Order.swift in Sources */,
 				F2D9CE8425F4335000FE74EE /* ContentView.swift in Sources */,
 				F2D9CE8225F4335000FE74EE /* DinningOutApp.swift in Sources */,
+				F21EB30B25F4FDDB0073CE2C /* ItemRow.swift in Sources */,
+				F2D9CE9A25F4398E00FE74EE /* Menu.swift in Sources */,
+				F2D9CE9725F438F600FE74EE /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,13 +347,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DinningOut/Preview Content\"";
 				DEVELOPMENT_TEAM = 54272CAZ82;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DinningOut/Info.plist;
+				INFOPLIST_FILE = DinningOut/Utils/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DinningOut.app.DinningOut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DinningOut.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,13 +369,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DinningOut/Preview Content\"";
 				DEVELOPMENT_TEAM = 54272CAZ82;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DinningOut/Info.plist;
+				INFOPLIST_FILE = DinningOut/Utils/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DinningOut.app.DinningOut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DinningOut.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

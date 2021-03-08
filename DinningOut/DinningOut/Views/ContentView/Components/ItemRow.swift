@@ -15,8 +15,11 @@ struct ItemRow: View {
         HStack(spacing: 20) {
             Image(item.thumbnailImage)
                 .clipShape(Circle())
-            Text(item.name)
-            Text("£ \(item.price)")
+            VStack(alignment: .leading, spacing: 4) {
+                Text(item.name)
+                Text("£ \(item.price)")
+            }
+            
         }
     }
 }
