@@ -14,6 +14,9 @@ struct ItemDetail: View {
     var body: some View {
         VStack {
             Image(item.mainImage)
+                .resizable()
+                .scaledToFit()
+            
             Text(item.description)
                 .padding()
             Spacer()

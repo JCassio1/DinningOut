@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F21EB30B25F4FDDB0073CE2C /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */; };
+		F26D3FF525F6ED1200E9A26F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D3FF425F6ED1200E9A26F /* Colors.swift */; };
+		F26D3FF925F6F30000E9A26F /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D3FF825F6F30000E9A26F /* ItemDetail.swift */; };
 		F2D9CE8225F4335000FE74EE /* DinningOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */; };
 		F2D9CE8425F4335000FE74EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CE8325F4335000FE74EE /* ContentView.swift */; };
 		F2D9CE8625F4335400FE74EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D9CE8525F4335400FE74EE /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		F26D3FF425F6ED1200E9A26F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F26D3FF825F6F30000E9A26F /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		F2D9CE7E25F4335000FE74EE /* DinningOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinningOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinningOutApp.swift; sourceTree = "<group>"; };
 		F2D9CE8325F4335000FE74EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F26D3FF725F6F2EC00E9A26F /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F26D3FF825F6F30000E9A26F /* ItemDetail.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
 		F2D9CE7525F4335000FE74EE = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +82,11 @@
 		F2D9CE8025F4335000FE74EE /* DinningOut */ = {
 			isa = PBXGroup;
 			children = (
-				F2D9CE9525F4386C00FE74EE /* Utils */,
+				F2D9CE9125F4382300FE74EE /* Helpers */,
 				F2D9CE9425F4386500FE74EE /* Views */,
 				F2D9CE9325F4384F00FE74EE /* Managers */,
 				F2D9CE9225F4382F00FE74EE /* Models */,
-				F2D9CE9125F4382300FE74EE /* Helpers */,
+				F2D9CE9525F4386C00FE74EE /* Utils */,
 				F2D9CE8725F4335400FE74EE /* Preview Content */,
 			);
 			path = DinningOut;
@@ -93,6 +105,7 @@
 			children = (
 				F2D9CEA225F44F5E00FE74EE /* menu.json */,
 				F2D9CE9625F438F600FE74EE /* Helper.swift */,
+				F26D3FF425F6ED1200E9A26F /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 		F2D9CE9325F4384F00FE74EE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F2D9CE9F25F44F2200FE74EE /* Order.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -115,8 +129,8 @@
 		F2D9CE9425F4386500FE74EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F26D3FF725F6F2EC00E9A26F /* ItemDetail */,
 				F2D9CEA625F4532000FE74EE /* ContentView */,
-				F2D9CE9F25F44F2200FE74EE /* Order.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,7 +227,9 @@
 				F2D9CEA025F44F2200FE74EE /* Order.swift in Sources */,
 				F2D9CE8425F4335000FE74EE /* ContentView.swift in Sources */,
 				F2D9CE8225F4335000FE74EE /* DinningOutApp.swift in Sources */,
+				F26D3FF525F6ED1200E9A26F /* Colors.swift in Sources */,
 				F21EB30B25F4FDDB0073CE2C /* ItemRow.swift in Sources */,
+				F26D3FF925F6F30000E9A26F /* ItemDetail.swift in Sources */,
 				F2D9CE9A25F4398E00FE74EE /* Menu.swift in Sources */,
 				F2D9CE9725F438F600FE74EE /* Helper.swift in Sources */,
 			);
