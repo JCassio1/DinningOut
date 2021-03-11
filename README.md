@@ -26,6 +26,7 @@ This is a mobile application that allows customers to view their restaurant menu
 ## 🛣 Protocol
 
 1. Commits must obey [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). This provides an easy set of rules for creating an explicit commit history, which makes it easier to write automated tools on top of such as SemVer.
+2. Development should follow [Git Flow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 
 
