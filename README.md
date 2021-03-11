@@ -2,6 +2,9 @@
 
 This is a mobile application that allows customers to view their restaurant menu via the app.
 
+<p align="center">
+  <img src="https://github.com/JCassio1/DinningOut/blob/main/DinningOut/DinningOut/Utils/CustomAssets/app-gif.gif" />
+</p>
 
 
 ## 🚀 Tech
