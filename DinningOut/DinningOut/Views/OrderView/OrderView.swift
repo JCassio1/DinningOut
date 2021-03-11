@@ -11,6 +11,10 @@ struct OrderView: View {
     
     @EnvironmentObject var order: Order
     
+    func deleteItem(at offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -22,6 +26,7 @@ struct OrderView: View {
                             Text("£ \(item.price)")
                         }
                     }
+                    .onDelete(perform: deleteItem)
                 }
                 
                 Section {
@@ -31,9 +36,13 @@ struct OrderView: View {
                             Text("Place Order")
                         })
                 }
+                .disabled(order.items.isEmpty)
             }
             .navigationTitle("My Order")
             .listStyle(InsetGroupedListStyle())
+            .toolbar{
+                EditButton()
+            }
         }
     }
 }
