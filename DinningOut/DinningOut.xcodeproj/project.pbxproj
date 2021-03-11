@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2380EE1D25FAE1980038BD63 /* app-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2380EE1C25FAE1980038BD63 /* app-gif.gif */; };
 		F21EB30B25F4FDDB0073CE2C /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */; };
 		F26D3FF525F6ED1200E9A26F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D3FF425F6ED1200E9A26F /* Colors.swift */; };
 		F26D3FF925F6F30000E9A26F /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D3FF825F6F30000E9A26F /* ItemDetail.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2380EE1C25FAE1980038BD63 /* app-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "app-gif.gif"; sourceTree = "<group>"; };
 		F21EB30A25F4FDDB0073CE2C /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		F26D3FF425F6ED1200E9A26F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F26D3FF825F6F30000E9A26F /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2380EE1B25FAE1800038BD63 /* CustomAssets */ = {
+			isa = PBXGroup;
+			children = (
+				2380EE1C25FAE1980038BD63 /* app-gif.gif */,
+			);
+			path = CustomAssets;
+			sourceTree = "<group>";
+		};
 		F21EB30925F4FDBC0073CE2C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +173,7 @@
 		F2D9CE9525F4386C00FE74EE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2380EE1B25FAE1800038BD63 /* CustomAssets */,
 				F2D9CE8125F4335000FE74EE /* DinningOutApp.swift */,
 				F2D9CE8525F4335400FE74EE /* Assets.xcassets */,
 				F2D9CE8A25F4335400FE74EE /* Info.plist */,
@@ -247,6 +258,7 @@
 				F2D9CEA325F44F5F00FE74EE /* menu.json in Resources */,
 				F2D9CE8925F4335400FE74EE /* Preview Assets.xcassets in Resources */,
 				F2D9CE8625F4335400FE74EE /* Assets.xcassets in Resources */,
+				2380EE1D25FAE1980038BD63 /* app-gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
