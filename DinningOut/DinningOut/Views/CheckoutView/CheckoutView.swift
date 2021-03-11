@@ -68,7 +68,6 @@ struct CheckoutView: View {
         .alert(isPresented: $showPaymentAlert) {
             Alert(title: Text("Vuppt! Order confirmed"), message: Text("Order total: £\(totalPrice)"), dismissButton: .default(Text("OK")))
         }
-        
     }
 }
 
